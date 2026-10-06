@@ -1,48 +1,47 @@
 import json
-import random
 
-quantidade = int(input("Quantidade de operações:"))
-
-operacoes = ["put", "get", "delete", "scan"]
+quantidade = int(input("Quantidade de operações: "))
 
 with open("workload.jsonl", "w", encoding="utf-8") as arquivo:
 
+    id_operacao = 1
+
     for i in range(1, quantidade + 1):
 
-        tipo = random.choice(operacoes)
+        tipo = (i - 1) % 4
 
-        if tipo == "put":
+        if tipo == 0:
             operacao = {
-                "id": i,
+                "id": id_operacao,
                 "op": "put",
                 "key": i,
                 "value": f"valor-{i}"
             }
 
-        elif tipo == "get":
+        elif tipo == 1:
             operacao = {
-                "id": i,
+                "id": id_operacao,
                 "op": "get",
                 "key": i
             }
 
-        elif tipo == "delete":
+        elif tipo == 2:
             operacao = {
-                "id": i,
+                "id": id_operacao,
                 "op": "delete",
                 "key": i
             }
 
-        elif tipo == "scan":
-            inicio = max(1, i - 10)
-
+        else:
             operacao = {
-                "id": i,
+                "id": id_operacao,
                 "op": "scan",
-                "start": inicio,
+                "start": max(1, i - 10),
                 "end": i
             }
 
         arquivo.write(json.dumps(operacao) + "\n")
+
+        id_operacao += 1
 
 print(f"{quantidade} operações geradas.")
