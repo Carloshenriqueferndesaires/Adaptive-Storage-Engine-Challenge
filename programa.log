@@ -1,0 +1,15 @@
+INFO - |1|valor| foram registradas
+INFO - |2|valor| foram registradas
+INFO - |3|valor| foram registradas
+INFO - valor: valor-1
+INFO - valor: valor-3
+2026-10-08 22:43:42,782 - INFO - |1|valor| foram registradas
+2026-10-08 22:43:42,783 - INFO - |2|valor| foram registradas
+2026-10-08 22:43:42,783 - INFO - |3|valor| foram registradas
+2026-10-08 22:43:42,783 - INFO - valor: valor-1
+2026-10-08 22:43:42,784 - INFO - valor: valor-3
+2026-10-08 22:44:19,564 - INFO - |1|valor| foram registradas
+2026-10-08 22:44:19,564 - INFO - |2|valor| foram registradas
+2026-10-08 22:44:19,565 - INFO - |3|valor| foram registradas
+2026-10-08 22:44:19,565 - INFO - valor: valor-1
+2026-10-08 22:44:19,566 - INFO - valor: valor-3
