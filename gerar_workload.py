@@ -8,7 +8,7 @@ with open("workload.jsonl", "w", encoding="utf-8") as arquivo:
 
     for i in range(1, quantidade + 1):
 
-        tipo = (i - 1) % 4
+        tipo = (i - 1) % 3
 
         if tipo == 0:
             operacao = {
@@ -25,21 +25,14 @@ with open("workload.jsonl", "w", encoding="utf-8") as arquivo:
                 "key": i
             }
 
-        elif tipo == 2:
+        else :
             operacao = {
                 "id": id_operacao,
                 "op": "delete",
                 "key": i
             }
 
-        else:
-            operacao = {
-                "id": id_operacao,
-                "op": "scan",
-                "start": max(1, i - 10),
-                "end": i
-            }
-
+        
         arquivo.write(json.dumps(operacao) + "\n")
 
         id_operacao += 1

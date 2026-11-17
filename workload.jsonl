@@ -1,10 +1,12 @@
 {"id": 1, "op": "put", "key": 1, "value": "valor-1"}
 {"id": 2, "op": "get", "key": 2}
 {"id": 3, "op": "delete", "key": 3}
-{"id": 4, "op": "scan", "start": 1, "end": 4}
-{"id": 5, "op": "put", "key": 5, "value": "valor-5"}
-{"id": 6, "op": "get", "key": 6}
-{"id": 7, "op": "delete", "key": 7}
-{"id": 8, "op": "scan", "start": 1, "end": 8}
-{"id": 9, "op": "put", "key": 9, "value": "valor-9"}
-{"id": 10, "op": "get", "key": 10}
+{"id": 4, "op": "put", "key": 4, "value": "valor-4"}
+{"id": 5, "op": "get", "key": 5}
+{"id": 6, "op": "delete", "key": 6}
+{"id": 7, "op": "put", "key": 7, "value": "valor-7"}
+{"id": 8, "op": "get", "key": 8}
+{"id": 9, "op": "delete", "key": 9}
+{"id": 10, "op": "put", "key": 10, "value": "valor-10"}
+{"id": 11, "op": "get", "key": 11}
+{"id": 12, "op": "delete", "key": 12}
